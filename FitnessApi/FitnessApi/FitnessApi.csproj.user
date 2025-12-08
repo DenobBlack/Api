@@ -11,5 +11,6 @@
     <WebStackScaffolding_DbContextTypeFullName>FitnessApi.DataContext.FitnessDbContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>False</WebStackScaffolding_IsViewGenerationSelected>
+    <ActiveDebugProfile>Container (Dockerfile)</ActiveDebugProfile>
   </PropertyGroup>
 </Project>

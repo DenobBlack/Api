@@ -1,0 +1,24 @@
+services:
+  fitnessapi:
+    image: ${DOCKER_REGISTRY-}fitnessapi
+    build:
+      context: .
+      dockerfile: FitnessApi/Dockerfile
+    ports:
+        - 8091:5091
+
+  db:
+    image: mysql:latest
+    environment:
+        MYSQL_ROOT_PASSWORD: root123
+        MYSQL_DATABASE: fitness_app
+        MYSQL_USER: user_fitness_app
+        MYSQL_PASSWORD: root123_old
+  
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
